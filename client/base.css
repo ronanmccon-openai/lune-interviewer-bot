@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 /*
 @tailwind base; adds base styles to all elements:
 https://tailwindcss.com/docs/preflight
@@ -7,8 +9,16 @@ https://tailwindcss.com/docs/preflight
 @tailwind utilities;
 
 :root {
-  --color-base: #efefef;
-  --color-highlight: #ff80ff;
+  --color-bg: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-subtle: #f1f5f9;
+  --color-border: #e5e7eb;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-accent: #10a37f;
+  --color-accent-strong: #0b7f63;
+  --color-warn: #f59e0b;
+  --shadow-soft: 0 10px 40px rgba(15, 23, 42, 0.08);
 }
 
 html,
@@ -17,8 +27,37 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  font-family: "Consolas", "Andale Mono", monospace;
-  font-size: 0.9rem;
-  background-color: var(--color-base);
+  overflow: auto;
+  font-family: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  background: radial-gradient(circle at 20% 20%, #e9f8f3 0, #f7f9fb 38%),
+    radial-gradient(circle at 80% 0%, #eef2ff 0, #f6f7fb 42%),
+    var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+}
+
+::selection {
+  background: rgba(16, 163, 127, 0.18);
+  color: var(--color-text);
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.5);
+  border-radius: 9999px;
 }

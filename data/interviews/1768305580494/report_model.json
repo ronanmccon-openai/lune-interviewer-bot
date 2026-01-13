@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "interview_id": "1768305580494",
+    "generated_at_iso": "2026-01-13T00:00:00Z",
+    "model": "unknown",
+    "reasoning_effort": "unknown"
+  },
+  "exec_summary": {
+    "bullets": [
+      "CSM uses ChatGPT Enterprise most days (4/5 frequency) primarily for writing-heavy workflows: customer follow-ups, success plans, QBR agendas, and internal updates.",
+      "Biggest benefits are faster turnaround and improved clarity/structure; reported shift from ~30–45 minutes to draft to ~10 minutes for an initial draft plus 10–15 minutes editing.",
+      "Uses standard chat plus Canvas (a couple times/week) to polish customer-ready drafts; occasional Deep Research for public industry/competitor context.",
+      "Main constraint is handling sensitive/precision-critical details (contracts/customer specifics); mitigates by sanitizing inputs and keeping sensitive parts manual, but this adds friction (ease 3/5).",
+      "Enablement is mixed (support 3/5); user requests role-based templates and a short enablement push to reduce reinvention."
+    ],
+    "overall_sentiment": "mixed"
+  },
+  "use_case": {
+    "title": "Post-meeting customer follow-up → structured recap + 30-day adoption plan",
+    "goal": "Create a customer-actionable follow-up with clear priorities, owners, timeline, and alignment to stated priorities.",
+    "workflow_steps": [
+      "Conduct customer check-in and capture high-level notes (sanitized).",
+      "Paste sanitized notes into ChatGPT Enterprise and request a structured recap (decisions, risks, next steps) plus a draft 30-day adoption plan.",
+      "Use the draft to build the customer email and a short internal summary.",
+      "Sanity-check accuracy and tone against original notes; adjust to match customer language; remove anything too specific.",
+      "Polish formatting and readability in Canvas; send customer email and share internal summary."
+    ],
+    "chatgpt_enterprise_role": "Drafting structured summaries and action plans from notes; rewriting/polishing for clarity and customer-ready tone via Canvas.",
+    "outcome_positive": [
+      "Faster same-day follow-ups; reduced time-to-draft and improved turnaround.",
+      "More consistent structure and clearer communication for customers and internal stakeholders.",
+      "Reduced effort to convert messy notes into actionable plans."
+    ],
+    "outcome_negative": [
+      "Added caution/overhead when prompts could include sensitive customer specifics or precision-critical contract language.",
+      "Requires manual verification and redaction, which can slow work in sensitive cases."
+    ]
+  },
+  "ratings": {
+    "dimensions": [
+      {
+        "key": "usage_frequency",
+        "label": "How often used in a typical week (1–5)",
+        "value": 4
+      },
+      {
+        "key": "workflow_fit",
+        "label": "How well it fit into the workflow (1–5)",
+        "value": 4
+      },
+      {
+        "key": "overall_impact",
+        "label": "Overall impact on day-to-day work (1–5)",
+        "value": 4
+      },
+      {
+        "key": "sensitive_info_workaround_ease",
+        "label": "Ease of dealing with sensitive/precision constraints (1–5)",
+        "value": 3
+      },
+      {
+        "key": "enablement_support",
+        "label": "How supported they feel to use it well (1–5)",
+        "value": 3
+      }
+    ],
+    "notes": "Self-reported weekly time savings: ~2–5 hours, depending on volume of follow-ups and QBRs."
+  },
+  "tools_used": [
+    "ChatGPT (chat)",
+    "Canvas",
+    "Deep Research"
+  ],
+  "themes": {
+    "wins": [
+      "Time savings and faster turnaround on customer follow-ups and QBR prep.",
+      "Improved clarity/structure when converting notes into action plans and success plans.",
+      "Better readability and customer-ready outputs when polishing in Canvas."
+    ],
+    "blockers": [
+      "Reluctance to include sensitive customer specifics or exact contract language in prompts.",
+      "Extra overhead to sanitize inputs and manually write sensitive parts; slows workflow sometimes.",
+      "Need to verify accuracy/tone against original notes before sending externally."
+    ],
+    "feature_requests": [
+      "Role-based templates for common CSM workflows (follow-ups, success plans, QBR structure).",
+      "Short enablement push to standardize good prompting routines and reduce reinvention."
+    ],
+    "enablement_needs": [
+      "More example prompts and guidance for common CSM tasks.",
+      "Shared best practices beyond ad hoc Slack examples; lightweight playbooks/routines (structure-first, tone-tighten)."
+    ],
+    "risks_or_caveats": [
+      "Potential for inadvertent inclusion of sensitive details if users are not careful; user mitigates through sanitization and manual drafting of sensitive sections.",
+      "Over-reliance risk is mitigated by user editing and sanity-checking for accuracy and customer-specific language."
+    ]
+  },
+  "key_quotes": [
+    {
+      "when": "T6",
+      "quote": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+      "topic": "Role / workflow context"
+    },
+    {
+      "when": "T10",
+      "quote": "Drafting customer-facing emails, summarizing meeting notes into action items, turning a messy set of notes into a clean success plan, brainstorming agendas for QBRs, and rewriting internal updates to be clearer.",
+      "topic": "Primary use cases"
+    },
+    {
+      "when": "T20",
+      "quote": "I pasted in my high-level notes (sanitized), asked for a structured recap + action plan, then used the draft to build the actual email and a short internal summary for my team.",
+      "topic": "End-to-end workflow"
+    },
+    {
+      "when": "T38",
+      "quote": "Before: I’d spend 30–45 minutes turning notes into something coherent... After: I get a solid draft in ~10 minutes, then spend another 10–15 editing for accuracy and tone.",
+      "topic": "Measured time impact"
+    },
+    {
+      "when": "T36",
+      "quote": "I can send a higher-quality follow-up the same day instead of letting it slip, and the structure is consistently better.",
+      "topic": "Quality + speed outcome"
+    },
+    {
+      "when": "T46",
+      "quote": "When I’m dealing with sensitive customer specifics, exact contract language, or anything where precision has to be perfect...",
+      "topic": "When they avoid using ChatGPT Enterprise"
+    },
+    {
+      "when": "T58",
+      "quote": "Publish a short set of role-based templates and do a quick enablement push so people stop reinventing the wheel.",
+      "topic": "Request to leadership / enablement"
+    }
+  ],
+  "evidence": {
+    "quotes": [
+      {
+        "when": "T10",
+        "quote": "Drafting customer-facing emails, summarizing meeting notes into action items... brainstorming agendas for QBRs...",
+        "topic": "Use cases"
+      },
+      {
+        "when": "T24",
+        "quote": "Mainly standard chat, but I did use Canvas to polish the email and the action-plan formatting.",
+        "topic": "Tools used"
+      },
+      {
+        "when": "T38",
+        "quote": "Before... 30–45 minutes... After... solid draft in ~10 minutes, then... 10–15 editing...",
+        "topic": "Time savings"
+      },
+      {
+        "when": "T44",
+        "quote": "Probably 2–5 hours a week, depending on how many customer follow-ups and QBRs I’m doing.",
+        "topic": "Weekly impact estimate"
+      },
+      {
+        "when": "T46",
+        "quote": "When I’m dealing with sensitive customer specifics, exact contract language... I don’t want to risk leaking details into a prompt.",
+        "topic": "Blocker / risk"
+      },
+      {
+        "when": "T56",
+        "quote": "3 out of 5 — I can make it work, but more examples and guidance would help.",
+        "topic": "Enablement gap"
+      }
+    ]
+  },
+  "quality": {
+    "transcript_quality": "good",
+    "ambiguity_notes": [
+      "No organization, industry, or specific customer systems named; precision around security/prompting policies is described qualitatively but not tied to specific Enterprise controls.",
+      "No explicit mention of connectors, API usage, or custom GPTs beyond the feature question; assumed not used based on respondent statements."
+    ]
+  }
+}

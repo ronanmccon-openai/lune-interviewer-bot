@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "interview_id": "1767799014956",
+    "generated_at_iso": "2026-01-07T00:00:00Z",
+    "model": "unknown",
+    "reasoning_effort": "medium"
+  },
+  "exec_summary": {
+    "bullets": [
+      "User is a Customer Success Manager using ChatGPT Enterprise most days (4/5) primarily for writing-heavy workflows: customer follow-ups, QBR prep, success plans, and internal updates.",
+      "Biggest impact is faster turnaround and clearer, more consistent structure; reported time savings are ~2–5 hours/week with meaningful lift (impact 4/5).",
+      "Primary workflow is notes → structured recap → action plan → customer email, with human review for tone/accuracy and redaction of specifics before sending.",
+      "Main constraint is handling sensitive/precise content (customer specifics, contract language); user avoids including those details and rates this friction as workable but slowing (3/5).",
+      "Adoption/enablement is mixed: some shared examples in Slack, but largely self-taught; user wants role-based templates and a quick enablement push."
+    ],
+    "overall_sentiment": "mixed"
+  },
+  "use_case": {
+    "title": "Customer Success writing acceleration (follow-ups, success plans, QBR structure)",
+    "goal": "Produce customer-actionable follow-ups and plans faster with clearer structure and tone, while managing sensitivity constraints.",
+    "workflow_steps": [
+      "Capture meeting notes from customer check-ins (kept high-level/sanitized).",
+      "Paste sanitized notes into ChatGPT Enterprise and request a structured recap (decisions, risks, next steps) plus an adoption plan.",
+      "Use the draft to create a customer-facing email and a short internal summary.",
+      "Polish wording and formatting in Canvas for customer-ready readability.",
+      "Sanity-check accuracy/tone against original notes; rewrite lines to match customer language; remove anything too specific before sending.",
+      "When content is sensitive/precision-critical, avoid prompting with specifics; use internal templates and write sensitive sections manually."
+    ],
+    "chatgpt_enterprise_role": "Drafting and structuring assistant for communication artifacts (recaps, action plans, emails) with optional Canvas polishing; occasional Deep Research for public context.",
+    "outcome_positive": [
+      "Faster production of same-day follow-ups",
+      "Clearer, more consistent structure in customer communications",
+      "Reduced effort for turning messy notes into plans and updates",
+      "Estimated 2–5 hours/week saved"
+    ],
+    "outcome_negative": [
+      "Caution required around sensitive details and perfect-precision content slows workflow",
+      "Enablement gaps lead to reinvention/personal experimentation"
+    ]
+  },
+  "ratings": {
+    "dimensions": [
+      {
+        "key": "usage_frequency",
+        "label": "How often used in a typical work week (1–5)",
+        "value": 4
+      },
+      {
+        "key": "workflow_fit",
+        "label": "How well ChatGPT Enterprise fit the workflow (1–5)",
+        "value": 4
+      },
+      {
+        "key": "impact",
+        "label": "Overall impact on day-to-day work (1–5)",
+        "value": 4
+      },
+      {
+        "key": "sensitivity_workaround_ease",
+        "label": "Ease of handling sensitivity/precision constraints while still using it (1–5)",
+        "value": 3
+      },
+      {
+        "key": "enablement_support",
+        "label": "How supported the user feels to use it well (1–5)",
+        "value": 3
+      }
+    ],
+    "notes": "User reports 2–5 hours/week saved; uses mostly standard chat plus Canvas a couple times/week; occasional Deep Research for public context."
+  },
+  "tools_used": [
+    "ChatGPT (chat)",
+    "Canvas",
+    "Deep Research"
+  ],
+  "themes": {
+    "wins": [
+      "Strong fit for note-to-summary-to-plan workflows (structure + wording)",
+      "Improves clarity and consistency of customer-ready communications",
+      "Enables faster same-day follow-ups and reduces writing time",
+      "Effective personal routine: request structure first, then tighten tone"
+    ],
+    "blockers": [
+      "Avoidance of sensitive customer specifics and exact contract language limits usage",
+      "Need for extra caution/redaction adds friction and can slow work",
+      "Enablement is inconsistent; many users rely on experimentation"
+    ],
+    "feature_requests": [
+      "Role-based templates/prompt packs for common CSM tasks (follow-ups, success plans, QBRs)",
+      "A short enablement push to reduce reinvention and standardize best practices"
+    ],
+    "enablement_needs": [
+      "Curated examples of strong prompts for common CSM workflows",
+      "Guidance on a repeatable workflow (structure first → tone/voice pass)",
+      "Shared internal library of templates (e.g., via Slack or workspace)"
+    ],
+    "risks_or_caveats": [
+      "Risk sensitivity: user is concerned about leaking customer specifics into prompts",
+      "Accuracy/tone still require human review; user sanity-checks against notes before sending",
+      "Not used for precision-critical contract language"
+    ]
+  },
+  "key_quotes": [
+    {
+      "when": "Turn 8",
+      "quote": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+      "topic": "Role context"
+    },
+    {
+      "when": "Turn 12",
+      "quote": "Drafting customer-facing emails, summarizing meeting notes into action items, turning a messy set of notes into a clean success plan, brainstorming agendas for QBRs, and rewriting internal updates to be clearer.",
+      "topic": "Primary use cases"
+    },
+    {
+      "when": "Turn 22",
+      "quote": "I pasted in my high-level notes (sanitized), asked for a structured recap + action plan, then used the draft to build the actual email and a short internal summary for my team.",
+      "topic": "Workflow"
+    },
+    {
+      "when": "Turn 26",
+      "quote": "Mainly standard chat, but I did use Canvas to polish the email and the action-plan formatting.",
+      "topic": "Features used"
+    },
+    {
+      "when": "Turn 38",
+      "quote": "Mostly time and clarity. I can send a higher-quality follow-up the same day instead of letting it slip, and the structure is consistently better.",
+      "topic": "Impact"
+    },
+    {
+      "when": "Turn 42",
+      "quote": "Probably 2–5 hours a week, depending on how many customer follow-ups and QBRs I’m doing.",
+      "topic": "ROI / time saved"
+    },
+    {
+      "when": "Turn 44",
+      "quote": "When I’m dealing with sensitive customer specifics, exact contract language, or anything where precision has to be perfect and I don’t want to risk leaking details into a prompt.",
+      "topic": "Constraints / governance concerns"
+    },
+    {
+      "when": "Turn 56",
+      "quote": "Publish a short set of role-based templates and do a quick enablement push so people stop reinventing the wheel.",
+      "topic": "Enablement request"
+    }
+  ],
+  "evidence": {
+    "quotes": [
+      {
+        "when": "Turn 14",
+        "quote": "4 out of 5 — I use it most days, usually in short bursts.",
+        "topic": "Usage frequency"
+      },
+      {
+        "when": "Turn 26",
+        "quote": "Mainly standard chat, but I did use Canvas to polish the email and the action-plan formatting.",
+        "topic": "Tools used"
+      },
+      {
+        "when": "Turn 38",
+        "quote": "Mostly time and clarity. I can send a higher-quality follow-up the same day instead of letting it slip, and the structure is consistently better.",
+        "topic": "Impact"
+      },
+      {
+        "when": "Turn 42",
+        "quote": "Probably 2–5 hours a week, depending on how many customer follow-ups and QBRs I’m doing.",
+        "topic": "Time saved"
+      },
+      {
+        "when": "Turn 44",
+        "quote": "When I’m dealing with sensitive customer specifics, exact contract language, or anything where precision has to be perfect...",
+        "topic": "Blockers"
+      },
+      {
+        "when": "Turn 54",
+        "quote": "3 out of 5 — I can make it work, but more examples and guidance would help.",
+        "topic": "Enablement gap"
+      }
+    ]
+  },
+  "quality": {
+    "transcript_quality": "good",
+    "ambiguity_notes": [
+      "No details provided on connectors, knowledge bases, custom GPTs, or governance/policy mechanisms beyond personal caution and sanitization.",
+      "No quantified quality metrics beyond self-reported time saved and perceived clarity improvements."
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "interview_id": "1767792214197",
+  "transcripts": [
+    {
+      "id": "item_CvNnc8DbiW8roIZRThFiA",
+      "role": "user",
+      "text": "This is an interview about ChatGPT Enterprise usage at work.",
+      "timestamp": "1:23:37 PM",
+      "timestampIso": "2026-01-07T13:23:37.210Z"
+    },
+    {
+      "id": "0f36f015-4568-4736-909f-abba7ddb4804",
+      "role": "assistant",
+      "text": "Hi — I’m Luné, an AI interviewer. This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen. Please keep examples high-level and avoid any confidential details. Take your time — pauses are fine. If you’re thinking, you can say ‘give me a second’ and I’ll wait. Are you happy to continue?",
+      "timestamp": "1:23:44 PM",
+      "timestampIso": "2026-01-07T13:23:44.286Z"
+    },
+    {
+      "id": "a9f23ac4-9a25-438c-aab8-4b1db7d7634e",
+      "role": "user",
+      "text": "Yes — happy to continue. I’ll keep things high-level and avoid any confidential details.",
+      "timestamp": "1:23:58 PM",
+      "timestampIso": "2026-01-07T13:23:58.177Z"
+    },
+    {
+      "id": "1ed402e8-9b29-435a-8495-5426f2691b7c",
+      "role": "assistant",
+      "text": "Great — and if you want to pause or skip anything, just say so. \n\nAt a few points I may ask a quick 1–5 rating to summarise — totally optional. Is that okay?",
+      "timestamp": "1:24:01 PM",
+      "timestampIso": "2026-01-07T13:24:01.934Z"
+    },
+    {
+      "id": "c727e39d-f44f-4b82-93e5-96ccaf0eb669",
+      "role": "user",
+      "text": "Yes, that’s fine.",
+      "timestamp": "1:24:07 PM",
+      "timestampIso": "2026-01-07T13:24:07.221Z"
+    },
+    {
+      "id": "ebd291b4-1d2e-4c4a-988e-ebbf3abcc36f",
+      "role": "assistant",
+      "text": "Thanks — for these 1–5 questions, 1 is the lowest end and 5 is the highest end (the most positive).\n\nTo start, at a high level, what’s your role and what kind of work fills most of your week?",
+      "timestamp": "1:24:10 PM",
+      "timestampIso": "2026-01-07T13:24:10.430Z"
+    },
+    {
+      "id": "6eeb08ab-152c-4239-8ee2-ce08d958cea3",
+      "role": "user",
+      "text": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+      "timestamp": "1:24:11 PM",
+      "timestampIso": "2026-01-07T13:24:11.817Z"
+    },
+    {
+      "id": "d7634ce9-e269-475e-b309-157997db1128",
+      "role": "assistant",
+      "text": "What are you most on the hook for — the things that really matter if they don’t get done?",
+      "timestamp": "1:24:13 PM",
+      "timestampIso": "2026-01-07T13:24:13.518Z"
+    },
+    {
+      "id": "3c797fc7-d990-4abc-b765-a520a9d6124b",
+      "role": "user",
+      "text": "Keeping accounts healthy: driving product adoption, making sure stakeholders see value, preventing churn risks from becoming surprises, and keeping execution tight on success plans.",
+      "timestamp": "1:24:15 PM",
+      "timestampIso": "2026-01-07T13:24:15.119Z"
+    },
+    {
+      "id": "a6186f89-6eef-41a6-b0a3-1c7a14398d4a",
+      "role": "assistant",
+      "text": "What kinds of tasks do you use ChatGPT Enterprise for in a typical week?",
+      "timestamp": "1:24:16 PM",
+      "timestampIso": "2026-01-07T13:24:16.495Z"
+    },
+    {
+      "id": "0612b6c4-d3e5-4969-b7db-a275260f4c5d",
+      "role": "user",
+      "text": "Drafting customer-facing emails, summarizing meeting notes into action items, turning a messy set of notes into a clean success plan, brainstorming agendas for QBRs, and rewriting internal updates to be clearer.",
+      "timestamp": "1:24:20 PM",
+      "timestampIso": "2026-01-07T13:24:20.034Z"
+    },
+    {
+      "id": "73834a00-7bef-4b27-b957-7e5a3563100d",
+      "role": "assistant",
+      "text": "And using that same 1–5 scale, how often do you use ChatGPT Enterprise in a typical work week?",
+      "timestamp": "1:24:22 PM",
+      "timestampIso": "2026-01-07T13:24:22.210Z"
+    },
+    {
+      "id": "1a5739ce-1072-4482-8a79-64c42e794b3c",
+      "role": "user",
+      "text": "4 out of 5 — I use it most days, usually in short bursts.",
+      "timestamp": "1:24:24 PM",
+      "timestampIso": "2026-01-07T13:24:24.446Z"
+    }
+  ],
+  "saved_at": "2026-01-07T13:24:25.760Z"
+}

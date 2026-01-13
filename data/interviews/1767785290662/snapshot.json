@@ -1,0 +1,55 @@
+{
+  "interview_id": "1767785290662",
+  "transcripts": [
+    {
+      "id": "82647c92-14dd-46b3-894b-6a2ddf059c59",
+      "role": "assistant",
+      "text": "Hi — I’m Luné, an AI interviewer. This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen. Please keep examples high-level and avoid any confidential details. Take your time — pauses are fine. If you’re thinking, you can say ‘give me a second’ and I’ll wait. Are you happy to continue?",
+      "timestamp": "11:28:18 AM",
+      "timestampIso": "2026-01-07T11:28:18.900Z"
+    },
+    {
+      "id": "4fe4487f-5436-472c-a0d7-d935b8a58fca",
+      "role": "user",
+      "text": "Let's do it, I'm ready!",
+      "timestamp": "11:28:39 AM",
+      "timestampIso": "2026-01-07T11:28:39.996Z"
+    },
+    {
+      "id": "8554b33c-8bb8-4d79-a31e-cedb583ec26d",
+      "role": "assistant",
+      "text": "Great — and if you want to pause or skip anything, just say so. \n\nAt a few points I may ask a quick 1–5 rating to summarise — totally optional. Is that okay?",
+      "timestamp": "11:28:42 AM",
+      "timestampIso": "2026-01-07T11:28:42.833Z"
+    },
+    {
+      "id": "4be03e38-2ee0-4993-bc66-e24a2610044b",
+      "role": "user",
+      "text": "Yes",
+      "timestamp": "11:28:55 AM",
+      "timestampIso": "2026-01-07T11:28:55.427Z"
+    },
+    {
+      "id": "9eb44a47-1f47-436e-a732-0f8ee61e7475",
+      "role": "assistant",
+      "text": "Thanks — for these 1–5 questions, 1 is the lowest end and 5 is the highest end (the most positive). \n\nTo start, at a high level, what’s your role and what kind of work fills most of your week?",
+      "timestamp": "11:28:58 AM",
+      "timestampIso": "2026-01-07T11:28:58.740Z"
+    },
+    {
+      "id": "ed814378-bc82-4fb3-b4a6-65b84df4f979",
+      "role": "user",
+      "text": "I'm a customer success manager at OpenAI.\nResponsible for working with the clients both with their ChatGPT Enterprise usage and with our OpenAI API usage, basically helping coordinate teams both within OpenAI and with the client.",
+      "timestamp": "11:29:09 AM",
+      "timestampIso": "2026-01-07T11:29:09.285Z"
+    },
+    {
+      "id": "881b241c-b007-4e1a-8314-acc75981b7e0",
+      "role": "assistant",
+      "text": "What are you most on the hook for — the things that really matter if they don’t get done?",
+      "timestamp": "11:29:10 AM",
+      "timestampIso": "2026-01-07T11:29:10.728Z"
+    }
+  ],
+  "saved_at": "2026-01-07T11:29:14.253Z"
+}

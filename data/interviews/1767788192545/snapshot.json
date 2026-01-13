@@ -1,0 +1,69 @@
+{
+  "interview_id": "1767788192545",
+  "transcripts": [
+    {
+      "id": "31e8bdeb-3816-46e6-b6ac-362395485658",
+      "role": "assistant",
+      "text": "Hi — I’m Luné, an AI interviewer. This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen. Please keep examples high-level and avoid any confidential details. Take your time — pauses are fine. If you’re thinking, you can say ‘give me a second’ and I’ll wait. Are you happy to continue?",
+      "timestamp": "12:16:40 PM",
+      "timestampIso": "2026-01-07T12:16:40.807Z"
+    },
+    {
+      "id": "65cc2ca9-7acc-4267-a4c7-855e039d1475",
+      "role": "user",
+      "text": "Yes — happy to continue. I’ll keep things high-level and avoid any confidential details.",
+      "timestamp": "12:16:41 PM",
+      "timestampIso": "2026-01-07T12:16:41.467Z"
+    },
+    {
+      "id": "fe115b19-4b85-4f1f-a005-ab0c794c1f4b",
+      "role": "assistant",
+      "text": "Great — and if you want to pause or skip anything, just say so. At a few points I may ask a quick 1–5 rating to summarise — totally optional. Is that okay?",
+      "timestamp": "12:16:44 PM",
+      "timestampIso": "2026-01-07T12:16:44.262Z"
+    },
+    {
+      "id": "5c13d1e1-792d-464c-8234-62dc2ff016cc",
+      "role": "user",
+      "text": "Yes, that’s fine.",
+      "timestamp": "12:16:46 PM",
+      "timestampIso": "2026-01-07T12:16:46.293Z"
+    },
+    {
+      "id": "8241ad20-116c-4873-9478-42dcccc5786d",
+      "role": "assistant",
+      "text": "Thanks — for these 1–5 questions, 1 is the lowest end and 5 is the highest end (the most positive). To start, at a high level, what’s your role and what kind of work fills most of your week?",
+      "timestamp": "12:16:49 PM",
+      "timestampIso": "2026-01-07T12:16:49.559Z"
+    },
+    {
+      "id": "d08e7cdd-7a17-4a67-a4bc-a18d3a60d763",
+      "role": "user",
+      "text": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+      "timestamp": "12:16:51 PM",
+      "timestampIso": "2026-01-07T12:16:51.710Z"
+    },
+    {
+      "id": "c412bbd8-8894-4e67-81a7-204c7bf86480",
+      "role": "assistant",
+      "text": "What are you most on the hook for — the things that really matter if they don’t get done?",
+      "timestamp": "12:16:53 PM",
+      "timestampIso": "2026-01-07T12:16:53.813Z"
+    },
+    {
+      "id": "ca826f8c-a071-40fc-acbe-d26b13b82627",
+      "role": "user",
+      "text": "Keeping accounts healthy: driving product adoption, making sure stakeholders see value, preventing churn risks from becoming surprises, and keeping execution tight on success plans.",
+      "timestamp": "12:17:00 PM",
+      "timestampIso": "2026-01-07T12:17:00.041Z"
+    },
+    {
+      "id": "751c1fa0-03a4-4f75-b08e-6d5a87396211",
+      "role": "assistant",
+      "text": "What kinds of tasks do you use ChatGPT Enterprise for in a typical week?",
+      "timestamp": "12:17:01 PM",
+      "timestampIso": "2026-01-07T12:17:01.620Z"
+    }
+  ],
+  "saved_at": "2026-01-07T12:17:02.901Z"
+}

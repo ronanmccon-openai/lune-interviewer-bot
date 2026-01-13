@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "interview_id": "1767794532387",
+    "generated_at_iso": "2026-01-07T00:00:00Z",
+    "model": "unknown",
+    "reasoning_effort": "unknown"
+  },
+  "exec_summary": {
+    "bullets": [
+      "Customer Success Manager uses ChatGPT Enterprise most days for writing-heavy workflows: follow-ups, success plans, QBR agendas, and clearer internal updates.",
+      "Primary value is speed + structure: drafts produced quickly, then edited for accuracy and customer-specific tone; estimated 2–5 hours/week saved.",
+      "Most usage is standard chat plus Canvas for polishing and formatting; occasional Deep Research for public industry/competitor context.",
+      "Main constraint is sensitive/precise content (contract language, pricing, customer-specific details), which leads to manual work and cautious prompting.",
+      "Requested improvements: vetted prompt-template library for common CSM tasks and short office hours to share workflows/pitfalls."
+    ],
+    "overall_sentiment": "mixed",
+    "confidence": 0.86
+  },
+  "use_case": {
+    "title": "CSM follow-ups and success planning from meeting notes (notes → summary → plan)",
+    "goal": "Produce customer-actionable follow-ups (recap, decisions, risks, next steps) and adoption plans quickly with clear structure and tone.",
+    "workflow_steps": [
+      "Collect high-level meeting notes (sanitized).",
+      "Prompt ChatGPT Enterprise to generate a structured recap (decisions/risks/next steps) plus a draft adoption plan.",
+      "Use Canvas to polish wording and improve formatting/readability for customer-ready output.",
+      "Sanity-check accuracy vs. notes; adjust tone to match customer language; remove overly specific details.",
+      "Send customer email and create a short internal summary."
+    ],
+    "chatgpt_enterprise_role": "Drafting and structuring written outputs (customer emails, action plans, summaries); formatting/polish via Canvas; occasional public-context research via Deep Research.",
+    "outcome_positive": [
+      "Faster turnaround: solid draft in ~10 minutes plus 10–15 minutes editing vs. prior 30–45 minutes manual rewrite.",
+      "Improved clarity/structure and ability to send same-day follow-ups.",
+      "More consistent quality for writing-heavy deliverables (follow-ups, QBR prep, success plans)."
+    ],
+    "outcome_negative": [
+      "Cannot use for sensitive customer specifics or exact contract/pricing/legal language; requires caution and sometimes slows workflow.",
+      "Requires manual verification and edits for accuracy and customer-specific tone."
+    ],
+    "confidence": 0.84
+  },
+  "ratings": {
+    "dimensions": [
+      {
+        "key": "usage_frequency",
+        "label": "How often used in a typical work week (1–5)",
+        "value": 4
+      },
+      {
+        "key": "workflow_fit",
+        "label": "Fit into the workflow discussed (1–5)",
+        "value": 4
+      },
+      {
+        "key": "impact",
+        "label": "Overall impact on day-to-day work (1–5)",
+        "value": 4
+      },
+      {
+        "key": "ease_sensitivity_workarounds",
+        "label": "Ease of dealing with sensitivity/precision constraints day-to-day (1–5)",
+        "value": 3
+      },
+      {
+        "key": "enablement_support",
+        "label": "How supported they feel to use ChatGPT Enterprise well (1–5)",
+        "value": 3
+      }
+    ],
+    "notes": "User reports using ChatGPT Enterprise “most days” in short bursts, with strongest fit/impact for structured writing tasks; constraints around confidentiality and exactness reduce ease."
+  },
+  "themes": {
+    "wins": [
+      "Time savings and faster same-day customer follow-ups",
+      "Better structure and clarity in customer-ready communications",
+      "Canvas improves readability/formatting for polished drafts"
+    ],
+    "blockers": [
+      "Avoidance of sensitive customer specifics and exact contract/legal/pricing language",
+      "Extra caution/sanitization and manual verification can slow work"
+    ],
+    "feature_requests": [
+      "Library of vetted prompt templates for common CSM workflows",
+      "Short office hours to share workflows and pitfalls"
+    ],
+    "enablement_needs": [
+      "More shared examples and best-practice routines (e.g., ask for structure first, then tighten tone)",
+      "Team-wide knowledge sharing beyond ad hoc Slack posts and personal experimentation"
+    ],
+    "risks_or_caveats": [
+      "Risk concerns around leaking sensitive details into prompts (drives non-use or generic prompting)",
+      "Need for precision in legal/contract contexts requires manual drafting/validation"
+    ]
+  },
+  "evidence": {
+    "quotes": [
+      {
+        "when": "Turn 10",
+        "quote": "Drafting customer-facing emails, summarizing meeting notes into action items, turning a messy set of notes into a clean success plan, brainstorming agendas for QBRs, and rewriting internal updates to be clearer.",
+        "topic": "Primary tasks / use cases"
+      },
+      {
+        "when": "Turn 24",
+        "quote": "Mainly standard chat, but I did use Canvas to polish the email and the action-plan formatting.",
+        "topic": "Features used (Canvas)"
+      },
+      {
+        "when": "Turn 36",
+        "quote": "Mostly time and clarity. I can send a higher-quality follow-up the same day instead of letting it slip, and the structure is consistently better.",
+        "topic": "Impact (quality + timeliness)"
+      },
+      {
+        "when": "Turn 38",
+        "quote": "Before: I’d spend 30–45 minutes... After: I get a solid draft in ~10 minutes, then spend another 10–15 editing for accuracy and tone.",
+        "topic": "Quantified time/effort change"
+      },
+      {
+        "when": "Turn 44",
+        "quote": "When I’m dealing with sensitive customer specifics, exact contract language, or anything where precision has to be perfect and I don’t want to risk leaking details into a prompt.",
+        "topic": "When they avoid using it / constraints"
+      },
+      {
+        "when": "Turn 60",
+        "quote": "A small library of vetted prompt templates + short office hours where people can share real workflows and pitfalls.",
+        "topic": "Requested improvements"
+      }
+    ]
+  },
+  "quality": {
+    "transcript_quality": "good",
+    "ambiguity_notes": [
+      "No explicit mention of which internal systems/templates are used when avoiding ChatGPT Enterprise.",
+      "No explicit measurement of quality outcomes beyond self-reported clarity/structure and time saved."
+    ],
+    "overall_confidence": 0.86
+  }
+}

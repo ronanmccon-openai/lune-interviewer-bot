@@ -1,0 +1,48 @@
+{
+  "interview_id": "1767787632227",
+  "transcripts": [
+    {
+      "id": "ace9e34f-a5d7-4267-a193-6ac459207304",
+      "role": "assistant",
+      "text": "Hi — I’m Luné, an AI interviewer. This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen. Please keep examples high-level and avoid any confidential details. Take your time — pauses are fine. If you’re thinking, you can say ‘give me a second’ and I’ll wait. Are you happy to continue?",
+      "timestamp": "12:07:22 PM",
+      "timestampIso": "2026-01-07T12:07:22.965Z"
+    },
+    {
+      "id": "0db179bc-de26-48bd-96da-144ee84a2b8d",
+      "role": "user",
+      "text": "Yes — happy to continue. I’ll keep things high-level and avoid any confidential details.",
+      "timestamp": "12:07:24 PM",
+      "timestampIso": "2026-01-07T12:07:24.791Z"
+    },
+    {
+      "id": "a419253a-77e6-4aa1-af98-a159933f6076",
+      "role": "assistant",
+      "text": "Great — and if you want to pause or skip anything, just say so. \n\nAt a few points I may ask a quick 1–5 rating to summarise — totally optional. Is that okay?",
+      "timestamp": "12:07:27 PM",
+      "timestampIso": "2026-01-07T12:07:27.449Z"
+    },
+    {
+      "id": "376c89fe-8dc1-43fe-858b-5bac09301e4c",
+      "role": "user",
+      "text": "Yes, that’s fine.",
+      "timestamp": "12:07:30 PM",
+      "timestampIso": "2026-01-07T12:07:30.968Z"
+    },
+    {
+      "id": "b48876c2-d727-45ff-99ca-8cbd917d4943",
+      "role": "assistant",
+      "text": "Thanks — for these 1–5 questions, 1 is the lowest end and 5 is the highest end (the most positive). \n\nTo start, at a high level, what’s your role and what kind of work fills most of your week?",
+      "timestamp": "12:07:34 PM",
+      "timestampIso": "2026-01-07T12:07:34.027Z"
+    },
+    {
+      "id": "7ff5d2d8-97e3-41c3-8b79-5c46adfa3614",
+      "role": "user",
+      "text": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+      "timestamp": "12:07:35 PM",
+      "timestampIso": "2026-01-07T12:07:35.526Z"
+    }
+  ],
+  "saved_at": "2026-01-07T12:07:38.397Z"
+}

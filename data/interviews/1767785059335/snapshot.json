@@ -1,0 +1,20 @@
+{
+  "interview_id": "1767785059335",
+  "transcripts": [
+    {
+      "id": "item_CvLwDdghsmPLemwxjPOmF",
+      "role": "user",
+      "text": "This is an interview about ChatGPT Enterprise usage at work. Vocabulary includes: ChatGPT Enterprise, prompts, GPTs, connectors, knowledge base, workspace, governance, compliance, policy, enablement, adoption, ROI, time saved, quality, accuracy, security.",
+      "timestamp": "11:24:22 AM",
+      "timestampIso": "2026-01-07T11:24:22.408Z"
+    },
+    {
+      "id": "5727a5a8-6434-43f7-9378-319e4ea334a5",
+      "role": "assistant",
+      "text": "Hi — I’m Luné, an AI interviewer. This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen. Please keep examples high-level and avoid any confidential details. Take your time — pauses are fine. If you’re thinking, you can say ‘give me a second’ and I’ll wait. Are you happy to continue?",
+      "timestamp": "11:24:27 AM",
+      "timestampIso": "2026-01-07T11:24:27.330Z"
+    }
+  ],
+  "saved_at": "2026-01-07T11:24:36.851Z"
+}

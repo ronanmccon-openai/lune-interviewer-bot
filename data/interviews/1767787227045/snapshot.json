@@ -1,0 +1,34 @@
+{
+  "interview_id": "1767787227045",
+  "transcripts": [
+    {
+      "id": "63ca17b8-05bb-4cb2-aa1b-1e5e8433279c",
+      "role": "assistant",
+      "text": "Bonjour, je suis",
+      "timestamp": "12:00:33 PM",
+      "timestampIso": "2026-01-07T12:00:33.780Z"
+    },
+    {
+      "id": "item_CvMVELErKxyGauNcjoBHw",
+      "role": "user",
+      "text": "Where are you getting those from?",
+      "timestamp": "12:00:33 PM",
+      "timestampIso": "2026-01-07T12:00:33.800Z"
+    },
+    {
+      "id": "item_CvMVFGbFZJ8JOAXOHBNC6",
+      "role": "user",
+      "text": "Our findings suggest that ChatGPT Enterprise has significantly improved our productivity.",
+      "timestamp": "12:00:35 PM",
+      "timestampIso": "2026-01-07T12:00:35.713Z"
+    },
+    {
+      "id": "item_CvMVHDDWhitNpMdx0Sn70",
+      "role": "user",
+      "text": "Yeah, no problem if it's okay.",
+      "timestamp": "12:00:38 PM",
+      "timestampIso": "2026-01-07T12:00:38.114Z"
+    }
+  ],
+  "saved_at": "2026-01-07T12:00:39.346Z"
+}

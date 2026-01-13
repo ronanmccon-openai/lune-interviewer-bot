@@ -7,27 +7,29 @@ function Event({ event, timestamp }) {
   const isClient = event.event_id && !event.event_id.startsWith("event_");
 
   return (
-    <div className="flex flex-col gap-2 p-2 rounded-md bg-gray-50">
+    <div className="flex flex-col gap-2 p-3 rounded-xl bg-slate-800/70 border border-slate-700 text-slate-100 shadow-inner">
       <div
         className="flex items-center gap-2 cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {isClient ? (
-          <ArrowDown className="text-blue-400" />
+          <ArrowDown className="text-emerald-300" />
         ) : (
-          <ArrowUp className="text-green-400" />
+          <ArrowUp className="text-sky-300" />
         )}
-        <div className="text-sm text-gray-500">
-          {isClient ? "client:" : "server:"}
-          &nbsp;{event.type} | {timestamp}
+        <div className="text-xs font-semibold uppercase tracking-wide text-slate-200">
+          {isClient ? "client" : "server"}
+          <span className="text-slate-400 font-normal normal-case">
+            &nbsp;{event.type} | {timestamp}
+          </span>
         </div>
       </div>
       <div
-        className={`text-gray-500 bg-gray-200 p-2 rounded-md overflow-x-auto ${
+        className={`text-slate-100 bg-slate-950/60 p-3 rounded-lg overflow-x-auto border border-slate-700 font-mono text-xs ${
           isExpanded ? "block" : "hidden"
         }`}
       >
-        <pre className="text-xs">{JSON.stringify(event, null, 2)}</pre>
+        <pre>{JSON.stringify(event, null, 2)}</pre>
       </div>
     </div>
   );
@@ -53,9 +55,9 @@ export default function EventLog({ events }) {
   });
 
   return (
-    <div className="flex flex-col gap-2 overflow-x-auto">
+    <div className="flex flex-col gap-3 overflow-x-auto text-slate-100">
       {events.length === 0 ? (
-        <div className="text-gray-500">Awaiting events...</div>
+        <div className="text-slate-400 text-sm">Awaiting events...</div>
       ) : (
         eventsToDisplay
       )}

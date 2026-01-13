@@ -1,0 +1,27 @@
+{
+  "interview_id": "1767785679138",
+  "transcripts": [
+    {
+      "id": "2eeda886-9bc3-4ebc-9422-32cb55e144ce",
+      "role": "assistant",
+      "text": "Hi — I’m Luné, an AI interviewer. This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen. Please keep examples high-level and avoid any confidential details. Take your time — pauses are fine. If you’re thinking, you can say ‘give me a second’ and I’ll wait. Are you happy to continue?",
+      "timestamp": "11:34:47 AM",
+      "timestampIso": "2026-01-07T11:34:47.479Z"
+    },
+    {
+      "id": "5f64d227-f1e4-427a-aefd-9e473a49a135",
+      "role": "user",
+      "text": "I'm a customer success manager at OpenAI.\nResponsible for working with the clients both with their ChatGPT Enterprise usage and with our OpenAI API usage, basically helping coordinate teams both within OpenAI and with the client.\nand help them realize their goals with our products.",
+      "timestamp": "11:34:47 AM",
+      "timestampIso": "2026-01-07T11:34:47.491Z"
+    },
+    {
+      "id": "af31800c-90a2-4f98-bf9f-f693ce16c379",
+      "role": "assistant",
+      "text": "Great — and if you want to pause or skip anything, just say so. \n\nAt a few points I may ask a quick 1–5 rating to summarise — totally optional. Is that okay?",
+      "timestamp": "11:34:49 AM",
+      "timestampIso": "2026-01-07T11:34:49.923Z"
+    }
+  ],
+  "saved_at": "2026-01-07T11:34:50.949Z"
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "interview_id": "1767792214197",
+    "generated_at_iso": "2026-01-07T00:00:00Z",
+    "model": "unknown",
+    "reasoning_effort": "medium"
+  },
+  "exec_summary": {
+    "bullets": [
+      "Interviewee is a Customer Success Manager focused on account health, adoption, and churn prevention.",
+      "Uses ChatGPT Enterprise most days (4/5 frequency), typically in short bursts.",
+      "Primary uses are customer email drafting, summarizing meeting notes into action items, organizing notes into success plans, QBR agenda brainstorming, and clarifying internal updates.",
+      "Impact, challenges, and specific measured outcomes were not covered in the provided transcript segment."
+    ],
+    "overall_sentiment": "unknown",
+    "confidence": 0.72
+  },
+  "use_case": {
+    "title": "Customer Success communication drafting and note-to-plan synthesis",
+    "goal": "Support day-to-day Customer Success communication and planning work by drafting and restructuring written materials",
+    "workflow_steps": [
+      "Draft customer-facing emails",
+      "Summarize meeting notes into action items",
+      "Convert messy notes into a cleaner success plan",
+      "Brainstorm QBR agendas",
+      "Rewrite internal updates to improve clarity"
+    ],
+    "chatgpt_enterprise_role": "Writing assistant and summarization/structuring aid for Customer Success workflows",
+    "outcome_positive": [
+      "Not specified in transcript (usage described, but outcomes not explicitly stated)"
+    ],
+    "outcome_negative": [
+      "Not specified in transcript"
+    ],
+    "confidence": 0.74
+  },
+  "ratings": {
+    "dimensions": [
+      {
+        "key": "usage_frequency",
+        "label": "How often ChatGPT Enterprise is used in a typical work week (1–5)",
+        "value": 4
+      }
+    ],
+    "notes": "No other ratings (e.g., satisfaction, impact) were asked or answered in the provided turns."
+  },
+  "themes": {
+    "wins": [
+      "Frequent use for drafting and rewriting business communications",
+      "Summarization of meeting notes into actionable follow-ups",
+      "Structuring unorganized notes into plans (e.g., success plans)"
+    ],
+    "blockers": [
+      "Not discussed in transcript"
+    ],
+    "feature_requests": [
+      "Not discussed in transcript"
+    ],
+    "enablement_needs": [
+      "Not discussed in transcript"
+    ],
+    "risks_or_caveats": [
+      "User explicitly noted they will keep examples high-level and avoid confidential details"
+    ]
+  },
+  "evidence": {
+    "quotes": [
+      {
+        "when": "turn 7",
+        "quote": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+        "topic": "Role and responsibilities"
+      },
+      {
+        "when": "turn 9",
+        "quote": "Keeping accounts healthy: driving product adoption, making sure stakeholders see value, preventing churn risks from becoming surprises, and keeping execution tight on success plans.",
+        "topic": "Top priorities"
+      },
+      {
+        "when": "turn 11",
+        "quote": "Drafting customer-facing emails, summarizing meeting notes into action items, turning a messy set of notes into a clean success plan, brainstorming agendas for QBRs, and rewriting internal updates to be clearer.",
+        "topic": "ChatGPT Enterprise tasks"
+      },
+      {
+        "when": "turn 13",
+        "quote": "4 out of 5 — I use it most days, usually in short bursts.",
+        "topic": "Usage frequency"
+      },
+      {
+        "when": "turn 3",
+        "quote": "Yes — happy to continue. I’ll keep things high-level and avoid any confidential details.",
+        "topic": "Confidentiality constraint"
+      }
+    ]
+  },
+  "quality": {
+    "transcript_quality": "good",
+    "ambiguity_notes": [
+      "The transcript segment ends before discussing impact, challenges, or outcomes; these fields are therefore left unspecified or marked unknown."
+    ],
+    "overall_confidence": 0.7
+  }
+}

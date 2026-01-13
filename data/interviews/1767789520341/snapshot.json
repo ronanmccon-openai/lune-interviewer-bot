@@ -1,0 +1,62 @@
+{
+  "interview_id": "1767789520341",
+  "transcripts": [
+    {
+      "id": "item_CvN6AqrrAMejNcVNFzywH",
+      "role": "user",
+      "text": "This is an interview about ChatGPT Enterprise usage at work. Vocabulary includes: ChatGPT Enterprise, prompts, GPTs, connectors, knowledge base, workspace, governance, compliance, policy, enablement, adoption, ROI, time saved, quality, accuracy, security.",
+      "timestamp": "12:38:44 PM",
+      "timestampIso": "2026-01-07T12:38:44.119Z"
+    },
+    {
+      "id": "4e36f58b-3258-4f72-8933-a2b799691f29",
+      "role": "assistant",
+      "text": "Hi — I’m Luné, an AI interviewer. This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen. Please keep examples high-level and avoid any confidential details. Take your time — pauses are fine. If you’re thinking, you can say ‘give me a second’ and I’ll wait. Are you happy to continue?",
+      "timestamp": "12:38:48 PM",
+      "timestampIso": "2026-01-07T12:38:48.933Z"
+    },
+    {
+      "id": "9ac01658-520c-48f1-bb09-d8b7a58be67f",
+      "role": "user",
+      "text": "Yes — happy to continue. I’ll keep things high-level and avoid any confidential details.",
+      "timestamp": "12:38:54 PM",
+      "timestampIso": "2026-01-07T12:38:54.877Z"
+    },
+    {
+      "id": "eae840b9-fade-48d4-9da0-3f811cb95ab4",
+      "role": "assistant",
+      "text": "Great — and if you want to pause or skip anything, just say so. At a few points I may ask a quick 1–5 rating to summarise — totally optional. Is that okay?",
+      "timestamp": "12:38:57 PM",
+      "timestampIso": "2026-01-07T12:38:57.717Z"
+    },
+    {
+      "id": "5518d378-dae2-445f-9b4d-e2b4511f16de",
+      "role": "user",
+      "text": "Yes, that’s fine.",
+      "timestamp": "12:38:59 PM",
+      "timestampIso": "2026-01-07T12:38:59.427Z"
+    },
+    {
+      "id": "0f6941d7-0197-4b9a-b18e-8ba7f46f2d4d",
+      "role": "assistant",
+      "text": "Thanks — for these 1–5 questions, 1 is the lowest end and 5 is the highest end (the most positive). To start, at a high level, what’s your role and what kind of work fills most of your week?",
+      "timestamp": "12:39:02 PM",
+      "timestampIso": "2026-01-07T12:39:02.616Z"
+    },
+    {
+      "id": "dd344d6e-6598-43a2-891a-6ea67011d8c1",
+      "role": "user",
+      "text": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+      "timestamp": "12:39:04 PM",
+      "timestampIso": "2026-01-07T12:39:04.212Z"
+    },
+    {
+      "id": "06125c02-fed0-43c9-8995-0b345fdaadee",
+      "role": "assistant",
+      "text": "What are you most on the hook for — the things that really matter if they don’t get done?",
+      "timestamp": "12:39:05 PM",
+      "timestampIso": "2026-01-07T12:39:05.730Z"
+    }
+  ],
+  "saved_at": "2026-01-07T13:20:12.201Z"
+}

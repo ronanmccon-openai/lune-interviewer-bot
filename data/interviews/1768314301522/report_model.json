@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "interview_id": "1768314301522",
+    "generated_at_iso": "2026-01-13T00:00:00Z",
+    "model": "unknown",
+    "reasoning_effort": "unknown"
+  },
+  "exec_summary": {
+    "bullets": [
+      "The transcript does not include any described ChatGPT Enterprise workflows or concrete examples; only the interview framing is present.",
+      "No impacts, constraints, integrations, or feature requests were provided by the interviewee in the available turns.",
+      "The only explicit context from the interviewee is that the interview topic is “ChatGPT Enterprise usage at work.”"
+    ],
+    "overall_sentiment": "unknown"
+  },
+  "use_case": {
+    "title": "ChatGPT Enterprise usage at work (no specific use case described)",
+    "goal": null,
+    "workflow_steps": [],
+    "chatgpt_enterprise_role": null,
+    "outcome_positive": [],
+    "outcome_negative": []
+  },
+  "ratings": {
+    "dimensions": [
+      {
+        "key": "weekly_frequency",
+        "label": "How often used in a typical week (1-5)",
+        "value": null
+      },
+      {
+        "key": "workflow_fit",
+        "label": "How well it fit into the workflow (1-5)",
+        "value": null
+      },
+      {
+        "key": "barrier_handling",
+        "label": "Barrier-handling while using it (1-5)",
+        "value": null
+      },
+      {
+        "key": "overall_impact",
+        "label": "Overall impact (1-5)",
+        "value": null
+      },
+      {
+        "key": "enablement_support",
+        "label": "Enablement/support (1-5)",
+        "value": null
+      }
+    ],
+    "notes": null
+  },
+  "tools_used": [
+    "Unknown"
+  ],
+  "themes": {
+    "wins": [],
+    "blockers": [],
+    "feature_requests": [],
+    "enablement_needs": [],
+    "risks_or_caveats": []
+  },
+  "key_quotes": [
+    {
+      "when": "Turn 2",
+      "quote": "This is an interview about ChatGPT Enterprise usage at work.",
+      "topic": "Use case"
+    },
+    {
+      "when": "Turn 1",
+      "quote": "This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen.",
+      "topic": "Interview scope"
+    },
+    {
+      "when": "Turn 1",
+      "quote": "Please keep examples high-level and avoid any confidential details.",
+      "topic": "Safety / confidentiality boundary"
+    },
+    {
+      "when": "Turn 1",
+      "quote": "Take your time — pauses are fine.",
+      "topic": "Interview process"
+    },
+    {
+      "when": "Turn 1",
+      "quote": "Are you happy to continue?",
+      "topic": "Interview consent prompt"
+    }
+  ],
+  "evidence": {
+    "quotes": [
+      {
+        "when": "Turn 1",
+        "quote": "This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen.",
+        "topic": "Interview scope"
+      },
+      {
+        "when": "Turn 1",
+        "quote": "Please keep examples high-level and avoid any confidential details.",
+        "topic": "Safety / confidentiality boundary"
+      },
+      {
+        "when": "Turn 2",
+        "quote": "This is an interview about ChatGPT Enterprise usage at work.",
+        "topic": "Use case"
+      }
+    ]
+  },
+  "quality": {
+    "transcript_quality": "poor",
+    "ambiguity_notes": [
+      "The provided transcript ends before the interviewee describes any actual ChatGPT Enterprise usage, workflows, tools, outcomes, or constraints.",
+      "No ratings, frequency, or impact details are included in the available turns."
+    ]
+  }
+}

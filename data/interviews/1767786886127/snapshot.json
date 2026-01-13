@@ -1,0 +1,160 @@
+{
+  "interview_id": "1767786886127",
+  "transcripts": [
+    {
+      "id": "b3b11dcc-dabc-4b65-ab20-3d56726d6ba6",
+      "role": "assistant",
+      "text": "Hi — I’m Luné, an AI interviewer. This will be a conversation about how you’re using ChatGPT Enterprise in your day-to-day work — what you use it for, what’s working well, what’s challenging, and what impact you’ve seen. Please keep examples high-level and avoid any confidential details. Take your time — pauses are fine. If you’re thinking, you can say ‘give me a second’ and I’ll wait. Are you happy to continue?",
+      "timestamp": "11:54:58 AM",
+      "timestampIso": "2026-01-07T11:54:58.722Z"
+    },
+    {
+      "id": "8cd276a5-eb08-41c2-9c50-c10a7ff6019f",
+      "role": "user",
+      "text": "Yes — happy to continue. I’ll keep things high-level and avoid any confidential details.",
+      "timestamp": "11:55:06 AM",
+      "timestampIso": "2026-01-07T11:55:06.394Z"
+    },
+    {
+      "id": "eac1d5ea-2411-4189-9c52-58d7ab3a8ca9",
+      "role": "assistant",
+      "text": "Great — and if you want to pause or skip anything, just say so.\n\nAt a few points I may ask a quick 1–5 rating to summarise — totally optional. Is that okay?",
+      "timestamp": "11:55:09 AM",
+      "timestampIso": "2026-01-07T11:55:09.114Z"
+    },
+    {
+      "id": "0a0ccebb-4394-46ab-9b1b-7ba02637558c",
+      "role": "user",
+      "text": "Yes, that’s fine.",
+      "timestamp": "11:55:11 AM",
+      "timestampIso": "2026-01-07T11:55:11.736Z"
+    },
+    {
+      "id": "772f5af0-c080-4fbc-a923-92dec1731233",
+      "role": "assistant",
+      "text": "Thanks — for these 1–5 questions, 1 is the lowest end and 5 is the highest end (the most positive).\n\nTo start, at a high level, what’s your role and what kind of work fills most of your week?",
+      "timestamp": "11:55:15 AM",
+      "timestampIso": "2026-01-07T11:55:15.334Z"
+    },
+    {
+      "id": "12cc30e8-deae-413c-a626-e3902d27e955",
+      "role": "user",
+      "text": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+      "timestamp": "11:55:18 AM",
+      "timestampIso": "2026-01-07T11:55:18.132Z"
+    },
+    {
+      "id": "80eaf277-4135-4be3-bbc6-dc27bfb4845c",
+      "role": "assistant",
+      "text": "What are you most on the hook for — the things that really matter if they don’t get done?",
+      "timestamp": "11:55:19 AM",
+      "timestampIso": "2026-01-07T11:55:19.590Z"
+    },
+    {
+      "id": "8db4ba43-2a7f-4d13-b2af-b979af18a054",
+      "role": "user",
+      "text": "Keeping accounts healthy: driving product adoption, making sure stakeholders see value, preventing churn risks from becoming surprises, and keeping execution tight on success plans.",
+      "timestamp": "11:55:30 AM",
+      "timestampIso": "2026-01-07T11:55:30.761Z"
+    },
+    {
+      "id": "dd0cfd62-0423-4164-b19b-04fa0d6ff4e6",
+      "role": "assistant",
+      "text": "What kinds of tasks do you use ChatGPT Enterprise for in a typical week?",
+      "timestamp": "11:55:32 AM",
+      "timestampIso": "2026-01-07T11:55:32.056Z"
+    },
+    {
+      "id": "9dadee2d-e546-483e-a3b4-6bf103464e5d",
+      "role": "user",
+      "text": "Drafting customer-facing emails, summarizing meeting notes into action items, turning a messy set of notes into a clean success plan, brainstorming agendas for QBRs, and rewriting internal updates to be clearer.",
+      "timestamp": "11:55:34 AM",
+      "timestampIso": "2026-01-07T11:55:34.170Z"
+    },
+    {
+      "id": "9e2ff4c1-599a-451e-a3a1-c253d44cba19",
+      "role": "assistant",
+      "text": "And using that same 1–5 scale — how often do you use ChatGPT Enterprise in a typical work week?",
+      "timestamp": "11:55:36 AM",
+      "timestampIso": "2026-01-07T11:55:36.144Z"
+    },
+    {
+      "id": "6e5405e3-6b44-46f1-8743-bb41eb309900",
+      "role": "user",
+      "text": "4 out of 5 — I use it most days, usually in short bursts.",
+      "timestamp": "11:55:39 AM",
+      "timestampIso": "2026-01-07T11:55:39.122Z"
+    },
+    {
+      "id": "0d156500-9c02-43f6-bbc7-5ba03d154928",
+      "role": "assistant",
+      "text": "Just to confirm — is that a 4 out of 5?",
+      "timestamp": "11:55:40 AM",
+      "timestampIso": "2026-01-07T11:55:40.125Z"
+    },
+    {
+      "id": "eb977595-cbdb-46c6-ad2c-fb1bc2289de2",
+      "role": "user",
+      "text": "Yes",
+      "timestamp": "11:55:50 AM",
+      "timestampIso": "2026-01-07T11:55:50.790Z"
+    },
+    {
+      "id": "36437b7c-47b8-4603-b79c-14211c7440ee",
+      "role": "assistant",
+      "text": "Got it — tell me about the last time you used ChatGPT Enterprise for a real work task — ideally something you had to think through.",
+      "timestamp": "11:55:52 AM",
+      "timestampIso": "2026-01-07T11:55:52.785Z"
+    },
+    {
+      "id": "58240edc-0fe4-4c2c-a74e-486abc96cad9",
+      "role": "user",
+      "text": "Yesterday after a customer check-in, I needed to turn the discussion into a crisp follow-up: recap, decisions, risks, and next steps, plus a draft 30‑day adoption plan we could align on.",
+      "timestamp": "11:55:54 AM",
+      "timestampIso": "2026-01-07T11:55:54.477Z"
+    },
+    {
+      "id": "6afc76a4-b21a-489d-9a28-d48df7853eaf",
+      "role": "assistant",
+      "text": "What were you trying to accomplish?",
+      "timestamp": "11:55:56 AM",
+      "timestampIso": "2026-01-07T11:55:56.095Z"
+    },
+    {
+      "id": "8cd00b33-a2d5-4e9b-ba22-31280f093d5d",
+      "role": "user",
+      "text": "Create a follow-up that the customer could act on: clear priorities, owners, timeline, and a simple plan that matched what they said they cared about.",
+      "timestamp": "11:56:03 AM",
+      "timestampIso": "2026-01-07T11:56:03.160Z"
+    },
+    {
+      "id": "cf2aadea-6940-4097-88a3-e03b4f09f420",
+      "role": "assistant",
+      "text": "How did you use what ChatGPT Enterprise gave you—what did it change about your next step?",
+      "timestamp": "11:56:04 AM",
+      "timestampIso": "2026-01-07T11:56:04.916Z"
+    },
+    {
+      "id": "6d2bceab-9dfd-47c7-894d-f975651a2ad7",
+      "role": "user",
+      "text": "I pasted in my high-level notes (sanitized), asked for a structured recap + action plan, then used the draft to build the actual email and a short internal summary for my team.",
+      "timestamp": "11:56:14 AM",
+      "timestampIso": "2026-01-07T11:56:14.777Z"
+    },
+    {
+      "id": "5c54d36d-fdce-4ae8-9f9e-b7cdf95be318",
+      "role": "assistant",
+      "text": "Before you used or shared it, did you do any quick check or tweak?",
+      "timestamp": "11:56:16 AM",
+      "timestampIso": "2026-01-07T11:56:16.952Z"
+    },
+    {
+      "id": "190fe6da-9858-4727-9bfd-9dc6ff4b1940",
+      "role": "user",
+      "text": "Yes — I sanity-checked tone and accuracy against my notes, rewrote a couple of lines to match the customer’s language, and removed anything too specific before sending.",
+      "timestamp": "11:56:31 AM",
+      "timestampIso": "2026-01-07T11:56:31.204Z"
+    }
+  ],
+  "saved_at": "2026-01-07T11:56:32.275Z"
+}

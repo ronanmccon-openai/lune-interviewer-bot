@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "interview_id": "1767792378925",
+    "generated_at_iso": "2026-01-07T00:00:00Z",
+    "model": "unknown",
+    "reasoning_effort": "medium"
+  },
+  "exec_summary": {
+    "bullets": [
+      "Customer Success Manager uses ChatGPT Enterprise most days (4/5) mainly for writing-heavy workflows: customer follow-ups, note-to-action summaries, success plans, and QBR prep.",
+      "Primary value is speed and clarity: produces more consistently structured, customer-ready communications and enables same-day follow-ups; estimated savings 2–5 hours/week.",
+      "Uses standard chat plus Canvas a couple times a week for polishing/formatting; occasional Deep Research for public industry/competitor context.",
+      "Avoids using it for highly sensitive or precision-critical content (customer specifics, legal/contract language, pricing); uses sanitization and manual drafting for sensitive parts.",
+      "Enablement is moderate (supported 3/5); requests role-based prompt templates and clearer guidance on safe internal-context referencing. "
+    ],
+    "overall_sentiment": "positive",
+    "confidence": 0.84
+  },
+  "use_case": {
+    "title": "CSM note-to-follow-up pipeline (recap → action items → adoption/success plan)",
+    "goal": "Turn messy/sanitized meeting notes into a crisp customer follow-up (decisions/risks/next steps) and a short adoption plan, plus an internal summary.",
+    "workflow_steps": [
+      "Capture meeting notes and sanitize/remove customer-specific sensitive details.",
+      "Prompt ChatGPT Enterprise for a structured recap (decisions, risks, next steps) and a draft action/adoption plan with priorities, owners, and timelines.",
+      "Use Canvas to polish wording, formatting, and readability for a customer-ready draft.",
+      "Sanity-check accuracy and tone against original notes; rewrite lines to match customer language; remove anything too specific.",
+      "Send customer email follow-up and share a short internal summary with the team."
+    ],
+    "chatgpt_enterprise_role": "Drafting/structuring and polishing writing outputs (standard chat + Canvas); occasional public-context research via Deep Research.",
+    "outcome_positive": [
+      "Faster turnaround on customer follow-ups (same day)",
+      "More consistent structure and clearer writing",
+      "Reduces time spent rewriting notes from scratch"
+    ],
+    "outcome_negative": [
+      "Not used for sensitive/precision-critical content due to confidentiality and exactness concerns",
+      "Requires manual review and editing for accuracy/tone before sending"
+    ],
+    "confidence": 0.86
+  },
+  "ratings": {
+    "dimensions": [
+      {
+        "key": "usage_frequency",
+        "label": "How often used in a typical work week (1–5)",
+        "value": 4
+      },
+      {
+        "key": "workflow_fit",
+        "label": "Fit into the described workflow (1–5)",
+        "value": 4
+      },
+      {
+        "key": "impact",
+        "label": "Overall impact on day-to-day work (1–5)",
+        "value": 4
+      },
+      {
+        "key": "enablement_support",
+        "label": "How supported they feel to use it well (1–5)",
+        "value": 3
+      }
+    ],
+    "notes": "Estimated time savings: 2–5 hours/week (self-reported)."
+  },
+  "themes": {
+    "wins": [
+      "Speeds up drafting of customer-facing follow-ups and internal updates",
+      "Improves clarity and structure for notes→summary→plan workflows",
+      "Canvas helps produce cleaner, customer-ready drafts"
+    ],
+    "blockers": [
+      "Concerns about confidentiality and leakage of customer-specific details",
+      "Avoidance for exacting/precision-required language (legal, pricing, contract terms)",
+      "Need for better guidance/examples to reduce trial-and-error"
+    ],
+    "feature_requests": [
+      "Role-based prompt templates for common CSM tasks (follow-ups, success plans, QBR structures)",
+      "Clearer guidance on what is safe to include in prompts and how to reference internal context without pasting details"
+    ],
+    "enablement_needs": [
+      "Short enablement push and shared examples (e.g., via Slack)",
+      "A simple recommended routine: ask for structure first, then tighten tone"
+    ],
+    "risks_or_caveats": [
+      "Potential risk if users accidentally include sensitive customer/contract/pricing details",
+      "Outputs still require sanity-checking for accuracy and customer-appropriate tone"
+    ]
+  },
+  "evidence": {
+    "quotes": [
+      {
+        "when": "T5",
+        "quote": "I’m a Customer Success Manager. Most of my week is customer calls, adoption planning, QBR prep, stakeholder follow-ups, and coordinating internally on escalations and renewals.",
+        "topic": "Role and core work"
+      },
+      {
+        "when": "T9",
+        "quote": "Drafting customer-facing emails, summarizing meeting notes into action items, turning a messy set of notes into a clean success plan, brainstorming agendas for QBRs, and rewriting internal updates to be clearer.",
+        "topic": "Primary use cases"
+      },
+      {
+        "when": "T21",
+        "quote": "Mainly standard chat, but I did use Canvas to polish the email and the action-plan formatting.",
+        "topic": "Features used (Canvas)"
+      },
+      {
+        "when": "T33",
+        "quote": "Mostly time and clarity. I can send a higher-quality follow-up the same day instead of letting it slip, and the structure is consistently better.",
+        "topic": "Impact/benefits"
+      },
+      {
+        "when": "T37",
+        "quote": "Probably 2–5 hours a week, depending on how many customer follow-ups and QBRs I’m doing.",
+        "topic": "Time savings"
+      },
+      {
+        "when": "T39",
+        "quote": "When I’m dealing with sensitive customer specifics, exact contract language, or anything where precision has to be perfect and I don’t want to risk leaking details into a prompt.",
+        "topic": "When they avoid using it"
+      },
+      {
+        "when": "T57",
+        "quote": "Publish a short set of role-based templates and do a quick enablement push so people stop reinventing the wheel.",
+        "topic": "Enablement request"
+      }
+    ]
+  },
+  "quality": {
+    "transcript_quality": "good",
+    "ambiguity_notes": [
+      "Turn 13 appears to answer a confirmation question (4/5) but instead provides an example; usage frequency is still clearly stated at turn 11.",
+      "One question about sharing prompts/tips (T44) is answered with a request for safer referencing guidance (T45), then clarified later (T47)."
+    ],
+    "overall_confidence": 0.83
+  }
+}

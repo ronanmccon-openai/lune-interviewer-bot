@@ -1,11 +1,14 @@
 import { StrictMode } from "react";
 import { renderToString } from "react-dom/server";
-import App from "./components/App";
+import { StaticRouter } from "react-router-dom/server";
+import Root from "./components/Root";
 
-export function render() {
+export function render(url = "/") {
   const html = renderToString(
     <StrictMode>
-      <App />
+      <StaticRouter location={url}>
+        <Root />
+      </StaticRouter>
     </StrictMode>,
   );
   return { html };
