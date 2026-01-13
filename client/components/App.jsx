@@ -240,7 +240,7 @@ export default function App() {
     clearConsentFallbackTimer();
     // Get a session token for OpenAI Realtime API
     try {
-      const tokenResponse = await fetch("/token");
+      const tokenResponse = await fetch("/api/token");
       if (!tokenResponse.ok) {
         throw new Error(`Token request failed: ${tokenResponse.status}`);
       }
