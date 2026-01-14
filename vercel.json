@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm run build && rm -rf client && mv client/dist/client .",
+  "buildCommand": "npm run build && rm -rf client && cp -r dist/client client",
   "outputDirectory": "client",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
