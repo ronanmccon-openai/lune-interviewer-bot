@@ -11,7 +11,7 @@ export default function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { id } = req.query;
+  const { id } = req.query || req.params || {};
   const state = readState(id);
   if (!state?.reportModel) {
     return res

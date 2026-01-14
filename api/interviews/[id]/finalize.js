@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { id } = req.query;
+  const { id } = req.query || req.params || {};
   const { transcripts } = req.body || {};
 
   if (!id) {
