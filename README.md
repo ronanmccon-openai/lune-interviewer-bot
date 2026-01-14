@@ -37,3 +37,5 @@ The previous version of this application that used WebSockets on the client (not
 ## License
 
 MIT
+
+Deployment trigger: 2025-01-14 12:00 UTC
