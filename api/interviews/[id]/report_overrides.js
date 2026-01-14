@@ -1,6 +1,11 @@
 import { mergeFinal, readState, saveReport } from "../../_lib/reporting.js";
 
 export default function handler(req, res) {
+  if (req.method === "OPTIONS") {
+    res.setHeader("Allow", "OPTIONS, PATCH");
+    return res.status(200).end();
+  }
+
   if (req.method !== "PATCH") {
     res.setHeader("Allow", "PATCH");
     return res.status(405).json({ error: "Method not allowed" });
