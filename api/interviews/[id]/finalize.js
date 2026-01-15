@@ -32,7 +32,7 @@ export default async function handler(req, res) {
     transcripts,
     saved_at: new Date().toISOString(),
   };
-  saveSnapshot(id, snapshot);
+  await saveSnapshot(id, snapshot);
 
   try {
     const reportModel = await generateReportWithRetry({
@@ -41,7 +41,7 @@ export default async function handler(req, res) {
     });
     const overrides = {};
     const report_final = mergeFinal(reportModel, overrides);
-    saveReport(id, reportModel, overrides);
+    await saveReport(id, reportModel, overrides);
 
     return res.json({
       ok: true,
