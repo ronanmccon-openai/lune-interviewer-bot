@@ -22,6 +22,7 @@ const TTL_SECONDS = 60 * 60 * 2; // 2 hours
 async function redisSet(key, value) {
   if (!redis) return;
   try {
+    console.log("[kv] set", { key });
     await redis.set(key, JSON.stringify(value), { ex: TTL_SECONDS });
   } catch (err) {
     console.warn("[kv] set failed", key, err?.message);
@@ -31,6 +32,7 @@ async function redisSet(key, value) {
 async function redisGet(key) {
   if (!redis) return null;
   try {
+    console.log("[kv] get", { key });
     const val = await redis.get(key);
     if (val === null || val === undefined) return null;
     if (typeof val === "string") return JSON.parse(val);
@@ -46,8 +48,9 @@ export async function saveSnapshot(id, snapshot) {
 }
 
 export async function getSnapshot(id) {
-  const data = await redisGet(`lune:snapshot:${id}`);
-  console.log("[kv] snapshot", { interviewId: id, found: !!data });
+  const key = `lune:snapshot:${id}`;
+  const data = await redisGet(key);
+  console.log("[kv] snapshot", { interviewId: id, key, found: !!data });
   return data;
 }
 
@@ -59,9 +62,11 @@ export async function saveReport(id, reportModel, overrides = {}) {
 }
 
 export async function getReport(id) {
-  const data = await redisGet(`lune:report:${id}`);
+  const key = `lune:report:${id}`;
+  const data = await redisGet(key);
   console.log("[kv] report", {
     interviewId: id,
+    key,
     found: !!data,
   });
   return data;

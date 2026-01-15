@@ -1,5 +1,6 @@
 import {
   generateReportWithRetry,
+  getSnapshot,
   mergeFinal,
   saveReport,
   saveSnapshot,
@@ -33,6 +34,14 @@ export default async function handler(req, res) {
     saved_at: new Date().toISOString(),
   };
   await saveSnapshot(id, snapshot);
+  const verifySnapshot = await getSnapshot(id);
+  console.log("[kv] snapshot after write", {
+    interviewId: id,
+    exists: !!verifySnapshot,
+  });
+  if (!verifySnapshot) {
+    throw new Error("Snapshot write verification failed");
+  }
 
   try {
     const reportModel = await generateReportWithRetry({
