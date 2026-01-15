@@ -18,6 +18,24 @@ const redis =
     : null;
 
 const TTL_SECONDS = 60 * 60 * 2; // 2 hours
+const TTL_MS = TTL_SECONDS * 1000;
+
+// Memory fallback store (best-effort) to handle missing/misconfigured Redis.
+const memoryStore = new Map();
+
+function memorySet(key, value) {
+  memoryStore.set(key, { value, expires: Date.now() + TTL_MS });
+}
+
+function memoryGet(key) {
+  const entry = memoryStore.get(key);
+  if (!entry) return null;
+  if (Date.now() > entry.expires) {
+    memoryStore.delete(key);
+    return null;
+  }
+  return entry.value;
+}
 
 async function redisSet(key, value) {
   if (!redis) return;
@@ -44,26 +62,51 @@ async function redisGet(key) {
 }
 
 export async function saveSnapshot(id, snapshot) {
-  await redisSet(`lune:snapshot:${id}`, snapshot);
+  const key = `lune:snapshot:${id}`;
+  memorySet(key, snapshot);
+  await redisSet(key, snapshot);
 }
 
 export async function getSnapshot(id) {
   const key = `lune:snapshot:${id}`;
-  const data = await redisGet(key);
+  let data = await redisGet(key);
+  if (!data) {
+    data = memoryGet(key);
+    if (data) {
+      console.log("[kv] snapshot (memory fallback)", {
+        interviewId: id,
+        key,
+        found: true,
+      });
+    }
+  }
   console.log("[kv] snapshot", { interviewId: id, key, found: !!data });
   return data;
 }
 
 export async function saveReport(id, reportModel, overrides = {}) {
-  await redisSet(`lune:report:${id}`, {
+  const key = `lune:report:${id}`;
+  const payload = {
     reportModel,
     overrides: overrides || {},
-  });
+  };
+  memorySet(key, payload);
+  await redisSet(key, payload);
 }
 
 export async function getReport(id) {
   const key = `lune:report:${id}`;
-  const data = await redisGet(key);
+  let data = await redisGet(key);
+  if (!data) {
+    data = memoryGet(key);
+    if (data) {
+      console.log("[kv] report (memory fallback)", {
+        interviewId: id,
+        key,
+        found: true,
+      });
+    }
+  }
   console.log("[kv] report", {
     interviewId: id,
     key,
