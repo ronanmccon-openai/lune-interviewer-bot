@@ -4,29 +4,67 @@ import {
   REPORT_FALLBACK_MODEL,
   REPORT_REASONING_EFFORT,
 } from "./env.js";
+import { Redis } from "@upstash/redis";
 
-const memoryStore = new Map();
+const redisUrl = process.env.KV_REST_API_URL;
+const redisToken = process.env.KV_REST_API_TOKEN;
 
-function ensureState(id) {
-  const existing = memoryStore.get(id);
-  if (existing) return existing;
-  const init = { snapshot: null, reportModel: null, overrides: {} };
-  memoryStore.set(id, init);
-  return init;
+const redis =
+  redisUrl && redisToken
+    ? new Redis({
+      url: redisUrl,
+      token: redisToken,
+    })
+    : null;
+
+const TTL_SECONDS = 60 * 60 * 2; // 2 hours
+
+async function redisSet(key, value) {
+  if (!redis) return;
+  try {
+    await redis.set(key, JSON.stringify(value), { ex: TTL_SECONDS });
+  } catch (err) {
+    console.warn("[kv] set failed", key, err?.message);
+  }
 }
 
-export function readState(id) {
-  return memoryStore.get(id) || null;
+async function redisGet(key) {
+  if (!redis) return null;
+  try {
+    const val = await redis.get(key);
+    if (val === null || val === undefined) return null;
+    if (typeof val === "string") return JSON.parse(val);
+    return val;
+  } catch (err) {
+    console.warn("[kv] get failed", key, err?.message);
+    return null;
+  }
 }
 
-export function saveSnapshot(id, snapshot) {
-  const state = ensureState(id);
-  memoryStore.set(id, { ...state, snapshot });
+export async function saveSnapshot(id, snapshot) {
+  await redisSet(`lune:snapshot:${id}`, snapshot);
 }
 
-export function saveReport(id, reportModel, overrides = {}) {
-  const state = ensureState(id);
-  memoryStore.set(id, { ...state, reportModel, overrides: overrides || {} });
+export async function getSnapshot(id) {
+  const data = await redisGet(`lune:snapshot:${id}`);
+  console.log("[kv] snapshot", { interviewId: id, found: !!data });
+  return data;
+}
+
+export async function saveReport(id, reportModel, overrides = {}) {
+  await redisSet(`lune:report:${id}`, {
+    reportModel,
+    overrides: overrides || {},
+  });
+}
+
+export async function getReport(id) {
+  const data = await redisGet(`lune:report:${id}`);
+  console.log("[kv] report", {
+    interviewId: id,
+    found: !!data,
+  });
+  return data;
 }
 
 export function mergeFinal(model, overrides) {
