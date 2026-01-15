@@ -39,3 +39,4 @@ The previous version of this application that used WebSockets on the client (not
 MIT
 
 Deployment trigger: 2025-01-14 12:00 UTC
+Deployment trigger: 2026-01-14 13:25 UTC
