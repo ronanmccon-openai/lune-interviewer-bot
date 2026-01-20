@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lune Interview Report</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap");
+
+      :root {
+        color-scheme: light;
+        --bg: #f6f3ef;
+        --panel: #ffffff;
+        --ink: #1f2328;
+        --muted: #5a5f66;
+        --accent: #d97757;
+        --accent-2: #2f4858;
+        --border: #e5e1dc;
+        --shadow: 0 18px 60px rgba(47, 72, 88, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top left, #fff7ef 0%, var(--bg) 45%, #eef1f5 100%);
+        color: var(--ink);
+      }
+
+      .frame {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 24px;
+        border-radius: 24px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: -0.02em;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .pill {
+        padding: 6px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: #fbfaf8;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      section {
+        padding: 20px;
+        border-radius: 18px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        box-shadow: 0 8px 30px rgba(47, 72, 88, 0.08);
+      }
+
+      section h2 {
+        margin: 0 0 12px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--accent-2);
+      }
+
+      .list {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .list li {
+        margin-bottom: 8px;
+        line-height: 1.4;
+      }
+
+      .kv {
+        display: grid;
+        gap: 8px;
+      }
+
+      .kv-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        border-bottom: 1px dashed var(--border);
+        padding-bottom: 6px;
+      }
+
+      .kv-row span:first-child {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .quote {
+        border-left: 3px solid var(--accent);
+        padding-left: 12px;
+        margin-bottom: 12px;
+      }
+
+      .quote small {
+        color: var(--muted);
+      }
+
+      .empty {
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <header>
+        <h1>Lune Interview Report</h1>
+        <div class="meta" id="meta"></div>
+      </header>
+
+      <div class="grid">
+        <section>
+          <h2>Executive Summary</h2>
+          <ul class="list" id="execSummary"></ul>
+        </section>
+        <section>
+          <h2>Use Case</h2>
+          <div id="useCase"></div>
+        </section>
+        <section>
+          <h2>Ratings</h2>
+          <div class="kv" id="ratings"></div>
+        </section>
+        <section>
+          <h2>Themes</h2>
+          <div id="themes"></div>
+        </section>
+      </div>
+
+      <div class="grid">
+        <section>
+          <h2>Tools Used</h2>
+          <ul class="list" id="tools"></ul>
+        </section>
+        <section>
+          <h2>Key Quotes</h2>
+          <div id="quotes"></div>
+        </section>
+        <section>
+          <h2>Evidence</h2>
+          <div id="evidence"></div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      const byId = (id) => document.getElementById(id);
+
+      const renderList = (el, items, emptyText) => {
+        el.innerHTML = "";
+        if (!items || items.length === 0) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = emptyText;
+          el.appendChild(empty);
+          return;
+        }
+        items.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          el.appendChild(li);
+        });
+      };
+
+      const renderKv = (el, pairs) => {
+        el.innerHTML = "";
+        if (!pairs || pairs.length === 0) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = "No ratings captured.";
+          el.appendChild(empty);
+          return;
+        }
+        pairs.forEach(({ label, value }) => {
+          const row = document.createElement("div");
+          row.className = "kv-row";
+          const key = document.createElement("span");
+          key.textContent = label;
+          const val = document.createElement("strong");
+          val.textContent = value ?? "—";
+          row.appendChild(key);
+          row.appendChild(val);
+          el.appendChild(row);
+        });
+      };
+
+      const renderQuotes = (el, quotes) => {
+        el.innerHTML = "";
+        if (!quotes || quotes.length === 0) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = "No quotes captured.";
+          el.appendChild(empty);
+          return;
+        }
+        quotes.forEach((q) => {
+          const block = document.createElement("div");
+          block.className = "quote";
+          const text = document.createElement("div");
+          text.textContent = q.quote || q.text || "";
+          const meta = document.createElement("small");
+          meta.textContent = `${q.when || ""} ${q.topic ? "• " + q.topic : ""}`.trim();
+          block.appendChild(text);
+          block.appendChild(meta);
+          el.appendChild(block);
+        });
+      };
+
+      const renderThemes = (el, themes) => {
+        el.innerHTML = "";
+        if (!themes) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = "No themes captured.";
+          el.appendChild(empty);
+          return;
+        }
+
+        const sections = [
+          { label: "Wins", key: "wins" },
+          { label: "Blockers", key: "blockers" },
+          { label: "Feature Requests", key: "feature_requests" },
+          { label: "Enablement", key: "enablement_needs" },
+          { label: "Risks", key: "risks_or_caveats" },
+        ];
+
+        sections.forEach((section) => {
+          const heading = document.createElement("strong");
+          heading.textContent = section.label;
+          heading.style.display = "block";
+          heading.style.marginTop = "8px";
+          el.appendChild(heading);
+
+          const list = document.createElement("ul");
+          list.className = "list";
+          renderList(list, themes[section.key], "—");
+          el.appendChild(list);
+        });
+      };
+
+      const renderUseCase = (el, useCase) => {
+        el.innerHTML = "";
+        if (!useCase) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = "No use case captured.";
+          el.appendChild(empty);
+          return;
+        }
+        const title = document.createElement("strong");
+        title.textContent = useCase.title || "Untitled use case";
+        const goal = document.createElement("div");
+        goal.textContent = useCase.goal || "";
+        goal.style.marginTop = "6px";
+
+        const role = document.createElement("div");
+        role.textContent = useCase.chatgpt_enterprise_role || "";
+        role.style.marginTop = "6px";
+        role.style.color = "var(--muted)";
+
+        el.appendChild(title);
+        el.appendChild(goal);
+        el.appendChild(role);
+
+        const workflow = document.createElement("ul");
+        workflow.className = "list";
+        workflow.style.marginTop = "10px";
+        renderList(workflow, useCase.workflow_steps, "No workflow steps captured.");
+        el.appendChild(workflow);
+
+        const outcomes = document.createElement("div");
+        outcomes.style.marginTop = "10px";
+        const pos = document.createElement("strong");
+        pos.textContent = "Positive outcomes";
+        const posList = document.createElement("ul");
+        posList.className = "list";
+        renderList(posList, useCase.outcome_positive, "—");
+        const neg = document.createElement("strong");
+        neg.textContent = "Negative outcomes";
+        const negList = document.createElement("ul");
+        negList.className = "list";
+        renderList(negList, useCase.outcome_negative, "—");
+        outcomes.appendChild(pos);
+        outcomes.appendChild(posList);
+        outcomes.appendChild(neg);
+        outcomes.appendChild(negList);
+        el.appendChild(outcomes);
+      };
+
+      const renderMeta = (el, meta) => {
+        el.innerHTML = "";
+        const items = [
+          meta?.interview_id ? `Interview: ${meta.interview_id}` : null,
+          meta?.generated_at_iso ? `Generated: ${meta.generated_at_iso}` : null,
+          meta?.model ? `Model: ${meta.model}` : null,
+          meta?.reasoning_effort ? `Reasoning: ${meta.reasoning_effort}` : null,
+        ].filter(Boolean);
+
+        if (items.length === 0) {
+          el.textContent = "Report metadata will appear here.";
+          return;
+        }
+
+        items.forEach((item) => {
+          const pill = document.createElement("span");
+          pill.className = "pill";
+          pill.textContent = item;
+          el.appendChild(pill);
+        });
+      };
+
+      const render = (report) => {
+        renderMeta(byId("meta"), report?.meta);
+        renderList(byId("execSummary"), report?.exec_summary?.bullets, "No summary yet.");
+        renderUseCase(byId("useCase"), report?.use_case);
+        renderKv(
+          byId("ratings"),
+          report?.ratings?.dimensions?.map((d) => ({
+            label: d.label || d.key,
+            value: d.value,
+          })),
+        );
+        renderThemes(byId("themes"), report?.themes);
+        renderList(byId("tools"), report?.tools_used, "No tools captured.");
+        renderQuotes(byId("quotes"), report?.key_quotes);
+        renderQuotes(byId("evidence"), report?.evidence?.quotes);
+      };
+
+      const getReport = () => {
+        const output = window.openai?.toolOutput;
+        if (!output) return null;
+        if (output.report) return output.report;
+        return output;
+      };
+
+      const refresh = () => {
+        const report = getReport();
+        if (!report) {
+          render({});
+          return;
+        }
+        render(report);
+      };
+
+      window.addEventListener("openai:set_globals", refresh);
+      refresh();
+    </script>
+  </body>
+</html>

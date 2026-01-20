@@ -1,0 +1,14 @@
+{
+  "name": "lune-chatgpt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "dotenv": "latest",
+    "zod": "latest"
+  }
+}
