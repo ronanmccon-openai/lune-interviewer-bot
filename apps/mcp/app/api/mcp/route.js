@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { createMcpHandler } from "mcp-handler";
-import INTERVIEWER_SYSTEM_PROMPT from "../../../../shared/interviewerPrompt.js";
+import INTERVIEWER_SYSTEM_PROMPT from "../../../../../shared/interviewerPrompt.js";
 import { generateReport } from "../../../lib/reporting.js";
 
 export const runtime = "nodejs";
