@@ -1,7 +1,8 @@
+import crypto from "node:crypto";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { createLuneServer } from "./mcpServer.js";
 
-const ALLOWED_METHODS = new Set(["GET", "POST", "DELETE"]);
+const ALLOWED_METHODS = new Set(["GET", "POST", "DELETE", "HEAD"]);
 const ALLOWED_PATHS = new Set(["/mcp", "/api/mcp"]);
 
 function setCors(res) {
@@ -20,6 +21,12 @@ export async function handleMcpRequest(req, res) {
     return;
   }
 
+  if (req.method === "HEAD") {
+    res.statusCode = 200;
+    res.end();
+    return;
+  }
+
   const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
   if (!ALLOWED_PATHS.has(url.pathname)) {
     res.statusCode = 404;
@@ -33,8 +40,13 @@ export async function handleMcpRequest(req, res) {
     return;
   }
 
+  // Force JSON responses for POST to avoid long-lived SSE requests on serverless runtimes.
+  if (req.method === "POST") {
+    req.headers.accept = "application/json";
+  }
+
   const transport = new StreamableHTTPServerTransport({
-    sessionIdGenerator: undefined,
+    sessionIdGenerator: () => crypto.randomUUID(),
     enableJsonResponse: true,
   });
 
