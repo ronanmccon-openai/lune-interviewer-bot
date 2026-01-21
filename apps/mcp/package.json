@@ -8,10 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "mcp-handler": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "zod": "latest"
+    "react-dom": "latest"
   }
 }

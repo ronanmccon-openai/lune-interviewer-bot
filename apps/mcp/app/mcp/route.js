@@ -1,4 +1,4 @@
-import { handleMcpHttpRequest } from "../../../lib/mcpHttp.js";
+import { handleMcpHttpRequest } from "../../lib/mcpHttp.js";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";

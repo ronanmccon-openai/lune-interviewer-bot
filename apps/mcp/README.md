@@ -13,6 +13,7 @@ npm run dev
 The MCP endpoint runs at:
 
 ```
+http://localhost:3000/mcp
 http://localhost:3000/api/mcp
 ```
 
@@ -36,5 +37,6 @@ Add env vars:
 The MCP endpoint will be available at:
 
 ```
+https://<your-project>.vercel.app/mcp
 https://<your-project>.vercel.app/api/mcp
 ```
