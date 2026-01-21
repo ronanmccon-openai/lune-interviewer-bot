@@ -1,9 +1,26 @@
 import { randomUUID } from "crypto";
+import { readFileSync } from "node:fs";
 import INTERVIEWER_SYSTEM_PROMPT from "../../../shared/interviewerPrompt.js";
 import { generateReport } from "./reporting.js";
+import { SAMPLE_REPORT } from "./sampleReport.js";
 
 const JSONRPC_VERSION = "2.0";
 const DEFAULT_PROTOCOL_VERSION = "2024-11-05";
+
+const REPORT_TEMPLATE_URI = "ui://widget/lune-report-v1.html";
+const REPORT_TEMPLATE_HTML = readFileSync(
+  new URL("../ui/report-widget.html", import.meta.url),
+  "utf8",
+);
+
+const RESOURCE_DEFS = [
+  {
+    uri: REPORT_TEMPLATE_URI,
+    name: "Lune report widget",
+    description: "ChatGPT report widget for Lune interview summaries.",
+    mimeType: "text/html+skybridge",
+  },
+];
 
 const TOOL_DEFS = [
   {
@@ -19,6 +36,7 @@ const TOOL_DEFS = [
   {
     name: "generate_report",
     description: "Generates the structured Lune report from an interview transcript.",
+    annotations: { readOnlyHint: true },
     inputSchema: {
       type: "object",
       properties: {
@@ -39,6 +57,26 @@ const TOOL_DEFS = [
       },
       required: ["transcripts"],
       additionalProperties: false,
+    },
+    _meta: {
+      "openai/outputTemplate": REPORT_TEMPLATE_URI,
+      "openai/toolInvocation/invoking": "Generating report",
+      "openai/toolInvocation/invoked": "Report ready",
+    },
+  },
+  {
+    name: "show_example_report",
+    description: "Returns a sample Lune report to preview the report widget layout.",
+    annotations: { readOnlyHint: true },
+    inputSchema: {
+      type: "object",
+      properties: {},
+      additionalProperties: false,
+    },
+    _meta: {
+      "openai/outputTemplate": REPORT_TEMPLATE_URI,
+      "openai/toolInvocation/invoking": "Loading example report",
+      "openai/toolInvocation/invoked": "Example report ready",
     },
   },
 ];
@@ -121,7 +159,14 @@ async function handleToolCall(params) {
 
     return {
       content: [{ type: "text", text: "Report generated." }],
-      structuredContent: { report },
+      structuredContent: { report, is_example: false },
+    };
+  }
+
+  if (name === "show_example_report") {
+    return {
+      content: [{ type: "text", text: "Example report loaded." }],
+      structuredContent: { report: SAMPLE_REPORT, is_example: true },
     };
   }
 
@@ -167,6 +212,24 @@ async function handleMessage(message) {
       case "tools/call": {
         const result = await handleToolCall(message.params || {});
         return jsonRpcResult(id, result);
+      }
+      case "resources/list": {
+        return jsonRpcResult(id, { resources: RESOURCE_DEFS });
+      }
+      case "resources/read": {
+        const uri = message.params?.uri;
+        if (uri !== REPORT_TEMPLATE_URI) {
+          return jsonRpcError(id, -32002, `Resource not found: ${uri}`);
+        }
+        return jsonRpcResult(id, {
+          contents: [
+            {
+              uri: REPORT_TEMPLATE_URI,
+              mimeType: "text/html+skybridge",
+              text: REPORT_TEMPLATE_HTML,
+            },
+          ],
+        });
       }
       case "prompts/list": {
         return jsonRpcResult(id, { prompts: [] });

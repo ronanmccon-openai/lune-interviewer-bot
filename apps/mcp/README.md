@@ -1,6 +1,7 @@
 # Lune ChatGPT App (MCP server)
 
-This folder hosts the MCP server for the ChatGPT App experience.
+This folder hosts the MCP server for the ChatGPT App experience, including the
+report widget (Apps SDK output template).
 
 ## Local dev
 
@@ -40,3 +41,8 @@ The MCP endpoint will be available at:
 https://<your-project>.vercel.app/mcp
 https://<your-project>.vercel.app/api/mcp
 ```
+
+## Tools
+
+- `generate_report` returns a report plus a widget UI.
+- `show_example_report` returns a sample report to preview the widget.
