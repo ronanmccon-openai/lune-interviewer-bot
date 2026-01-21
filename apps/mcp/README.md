@@ -13,12 +13,20 @@ npm run dev
 The MCP endpoint runs at:
 
 ```
-http://localhost:4000/mcp
+http://localhost:3000/api/mcp
+```
+
+Health check:
+
+```
+http://localhost:3000/api/health
 ```
 
 ## Vercel
 
-Set the Vercel project root to `apps/mcp` and add env vars:
+Set the Vercel project root to `apps/mcp`.
+
+Add env vars:
 
 - `OPENAI_API_KEY` (required)
 - `REPORT_MODEL` (optional)
@@ -28,5 +36,5 @@ Set the Vercel project root to `apps/mcp` and add env vars:
 The MCP endpoint will be available at:
 
 ```
-https://<your-project>.vercel.app/mcp
+https://<your-project>.vercel.app/api/mcp
 ```
