@@ -7,7 +7,7 @@ import { SAMPLE_REPORT } from "./sampleReport.js";
 const JSONRPC_VERSION = "2.0";
 const DEFAULT_PROTOCOL_VERSION = "2024-11-05";
 
-const REPORT_TEMPLATE_URI = "ui://widget/lune-report-v1.html";
+const REPORT_TEMPLATE_URI = "ui://widget/lune-report-v2.html";
 const REPORT_TEMPLATE_HTML = readFileSync(
   new URL("../ui/report-widget.html", import.meta.url),
   "utf8",
@@ -19,12 +19,24 @@ const RESOURCE_DEFS = [
     name: "Lune report widget",
     description: "ChatGPT report widget for Lune interview summaries.",
     mimeType: "text/html+skybridge",
+    _meta: {
+      "openai/widgetPrefersBorder": true,
+      "openai/widgetDomain": "https://chatgpt.com",
+      "openai/widgetCSP": {
+        "default-src": ["'self'"],
+        "img-src": ["'self'", "data:"],
+        "style-src": ["'self'", "'unsafe-inline'"],
+        "font-src": ["'self'", "data:"],
+        "script-src": ["'self'", "'unsafe-inline'"],
+      },
+    },
   },
 ];
 
 const TOOL_DEFS = [
   {
     name: "get_interviewer_prompt",
+    title: "Get interviewer prompt",
     description:
       "Returns the canonical Lune interview system prompt for ChatGPT Enterprise usage interviews.",
     inputSchema: {
@@ -35,6 +47,7 @@ const TOOL_DEFS = [
   },
   {
     name: "generate_report",
+    title: "Generate report",
     description: "Generates the structured Lune report from an interview transcript.",
     annotations: { readOnlyHint: true },
     inputSchema: {
@@ -66,6 +79,7 @@ const TOOL_DEFS = [
   },
   {
     name: "show_example_report",
+    title: "Show example report",
     description: "Returns a sample Lune report to preview the report widget layout.",
     annotations: { readOnlyHint: true },
     inputSchema: {
@@ -160,6 +174,9 @@ async function handleToolCall(params) {
     return {
       content: [{ type: "text", text: "Report generated." }],
       structuredContent: { report, is_example: false },
+      _meta: {
+        "openai/outputTemplate": REPORT_TEMPLATE_URI,
+      },
     };
   }
 
@@ -167,6 +184,9 @@ async function handleToolCall(params) {
     return {
       content: [{ type: "text", text: "Example report loaded." }],
       structuredContent: { report: SAMPLE_REPORT, is_example: true },
+      _meta: {
+        "openai/outputTemplate": REPORT_TEMPLATE_URI,
+      },
     };
   }
 
@@ -233,9 +253,6 @@ async function handleMessage(message) {
       }
       case "prompts/list": {
         return jsonRpcResult(id, { prompts: [] });
-      }
-      case "resources/list": {
-        return jsonRpcResult(id, { resources: [] });
       }
       case "ping": {
         return jsonRpcResult(id, {});
